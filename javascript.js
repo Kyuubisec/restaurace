@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let resetButton = document.getElementById("resetOrder");
     let orderSummary = document.getElementById("orderSummary");
 
-    // Povolení/disabling inputů množství
+    // Povolení/disable inputů množství
     checkboxes.forEach((checkbox, index) => {
         checkbox.addEventListener("change", () => {
             quantityInputs[index].disabled = !checkbox.checked;
         });
     });
 
-    // Zpracování objednávky
+    //  objednávky
     submitButton.addEventListener("click", () => {
         let total = 0;
         let orderDetails = "<ul>";
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         orderSummary.innerHTML = orderDetails;
     });
 
-    // Resetování formuláře
+    // Reset formuláře
     resetButton.addEventListener("click", () => {
         checkboxes.forEach((checkbox, index) => {
             checkbox.checked = false;
