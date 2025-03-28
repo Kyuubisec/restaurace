@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Restaurace - Objednávkový systém</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1>Objednávkový systém</h1>
+    <form id="orderForm">
+        <div class="menu-item">
+            <label><input type="checkbox" value="Pizza" data-price="150"> Pizza (150 Kč)</label>
+            <input type="number" min="1" value="1" disabled>
+        </div>
+        <div class="menu-item">
+            <label><input type="checkbox" value="Špagety" data-price="120"> Špagety (120 Kč)</label>
+            <input type="number" min="1" value="1" disabled>
+        </div>
+        <div class="menu-item">
+            <label><input type="checkbox" value="Káva" data-price="40"> Káva (40 Kč)</label>
+            <input type="number" min="1" value="1" disabled>
+        </div>
+        <button type="button" id="submitOrder">Odeslat objednávku</button>
+        <button type="button" id="resetOrder">Vymazat objednávku</button>
+    </form>
+    <h2>Přehled objednávky</h2>
+    <div id="orderSummary"></div>
+
+
+
+    <h6>Omlouvám se, ale pro grafický design , to mi moc nejde.</h6>
+    <script src="javascript.js"></script>
+</body>
+</html>
